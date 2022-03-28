@@ -99,7 +99,7 @@
 <script>
 
 export default {
-    name: 'Sidebar',
+    name: 'Boolzapp',
     data() {
 
         return {

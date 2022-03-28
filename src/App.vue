@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     
-    <Sidebar/>
+    <Boolzapp/>
     
   </div>
 </template>
 
 <script>
-import Sidebar from './components/Sidebar.vue'
+import Boolzapp from './components/Boolzapp.vue'
 
 export default {
   name: 'App',
   components: {
-    Sidebar,
+    Boolzapp,
   },
 }
 </script>
