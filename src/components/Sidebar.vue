@@ -25,7 +25,7 @@
 
           <div v-for="(element, i) in contacts" :key="i" @click="activeContact=element" class="item" :class="activeContact === element ? 'active' : ''">
               <div class="logo">
-                  <img src="../img/avatar.png" alt="">
+                  <img :src="element.avatar" :alt="element.avatar">
               </div>
               <div class="content">
                   <div class="details">
@@ -33,7 +33,7 @@
                       <span id="last-message">{{element.text}}</span>
                   </div>
                   <div class="date">
-                      <span>18:45</span>
+                      <span>{{element.date}}</span>
                   </div>
               </div>             
             </div>
@@ -109,7 +109,7 @@ export default {
        {
           name: "Michele",
           accesso: "oggi alle 19:20",
-          avatar: "img/01.jpg",
+          avatar: "../img/01.jpg",
           visible: true,
           messages: [
               {
@@ -134,7 +134,7 @@ export default {
      {
         name: "Fabio",
         accesso: "oggi alle 18:30",
-        avatar: "img/02.jpg",
+        avatar: "../img/02.webp",
         visible: true,
         messages: [
             {
@@ -159,7 +159,7 @@ export default {
      {
         name: "Samuele",
         accesso: "oggi alle 20:20",
-        avatar: "img/03.jpg",
+        avatar: "../img/03.webp",
         visible: true,
         messages: [
              {
@@ -183,7 +183,7 @@ export default {
     {
         name: "Luisa",
         accesso: "oggi alle 17:20",
-        avatar: "img/04.jpg",
+        avatar: "../img/04.jpg",
         visible: true,
         messages: [
              {
